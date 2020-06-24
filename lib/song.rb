@@ -30,7 +30,7 @@ class Song
     genreCount = {}
     individualCount = 0
     @@genres.each do |genre| 
-      genreCount[genre] ||= individualCount+=1
+      genreCount[genre] ||= individualCount += 1
     end
     genreCount
   end
