@@ -31,6 +31,7 @@ class Song
     @@genres.each do |genre| 
       genreCount[genre] ||= []
       genreCount[genre] << genre
+      genreCount[genre] = genreCount[genre].length
     end
     genreCount
   end
