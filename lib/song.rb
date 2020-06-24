@@ -29,7 +29,8 @@ class Song
   def self.genre_count
     genreCount = {}
     @@genres.each do |genre| 
-      genreCount[genre] = genreCount[genre].length
+      genreCount[genre] = []
+      genreCount[genre] << 
     end
     genreCount
   end
